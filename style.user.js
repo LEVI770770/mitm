@@ -39,11 +39,14 @@ sy.innerHTML = `[class="modal-content ui-resizable"],[component="chat/main-wrapp
 `
 
 document.body.append(sy);
-
-
 $(document).on('dblclick', '[component="chat/message/body"]', function () {
-    var topy = $(this).find('[dir="auto"]').text();
-    var inp = $('[component="chat/input"]');
-    inp.val('>' + topy + ' \n \n \n');
+    const massage = this.innerText;
+    const lines = massage.split('\n');
+    const [input] = $('[component="chat/input"]');
+    input.value += `>${lines.join('>')}\n\n`;
+    input.focus()
 });
+
+
+
 })();
