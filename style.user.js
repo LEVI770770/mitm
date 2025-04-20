@@ -26,6 +26,9 @@ sy.innerHTML = `
     background-color: #fff;
     border-radius: 20px 20px 0px 20px;
     margin-left: 50px !important;
+    padding-right: 21px !important;
+    margin-left: auto !important;
+    width: fit-content;
 }
 
 [data-self="1"][component="chat/message"]{
