@@ -36,16 +36,19 @@ sy.innerHTML = `[class="modal-content ui-resizable"],[component="chat/main-wrapp
     padding: 15px 20px 0px 20px !important;
 }
 
+
+[component="chat/message"] {
+    margin-top: 9px;
+    padding-right: 17px;
+}
+
+[component="chat/message"][data-break="false"] {
+    padding-top: 13px;
+}
+
 `
 
 document.body.append(sy);
-$(document).on('dblclick', '[component="chat/message/body"]', function () {
-    const massage = this.innerText;
-    const lines = massage.split('\n');
-    const [input] = $('[component="chat/input"]');
-    input.value += `>${lines.join('>')}\n\n`;
-    input.focus()
-});
 
 
 
