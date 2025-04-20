@@ -15,7 +15,9 @@
 
     let sy = document.createElement('style');
 
-sy.innerHTML = `[class="modal-content ui-resizable"],[component="chat/main-wrapper"]{
+sy.innerHTML = `
+
+[class="modal-content ui-resizable"],[component="chat/main-wrapper"]{
     background-image: url(https://mitmachim.top/assets/uploads/files/1689758993836-%D7%94%D7%95%D7%A8%D7%93%D7%94.png)
 }
 
@@ -28,8 +30,10 @@ sy.innerHTML = `[class="modal-content ui-resizable"],[component="chat/main-wrapp
 
 [data-self="1"][component="chat/message"]{
     background-color: #e7ffdb;
+    width: fit-content;
     border-radius: 20px 20px 20px 0px;
-    margin-right: 50px !important;
+    margin-right: auto !important;
+    padding-left: 21px !important;
 }
 
 .chat-message.mx-2.pe-2.clear{
@@ -46,6 +50,7 @@ sy.innerHTML = `[class="modal-content ui-resizable"],[component="chat/main-wrapp
 [component="chat/message"][data-break="false"] {
     padding-top: 13px;
 }
+
 
 `
 
