@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         new style of chat in mitmachim top
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @updateURL    https://github.com/LEVI770770/mitm/raw/main/style.user.js
 // @description  new style of chat in mitmachim top
 // @author       levi h
