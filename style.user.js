@@ -50,6 +50,12 @@ sy.innerHTML = `[class="modal-content ui-resizable"],[component="chat/main-wrapp
 
 document.body.append(sy);
 
-
+$(document).on('dblclick', '[component="chat/message/body"]', function () {
+    const massage = this.innerText;
+    const lines = massage.split('\n');
+    const [input] = $('[component="chat/input"]');
+    input.value += `>${lines.join('>')}\n\n`;
+    input.focus()
+});
 
 })();
